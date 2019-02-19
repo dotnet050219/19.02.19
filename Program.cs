@@ -102,7 +102,7 @@ namespace _1902
             }
             
 
-            */
+            
 
             int x;
             int sum = 0;
@@ -118,6 +118,37 @@ namespace _1902
             }
 
             Console.WriteLine("Sum = " + sum);
+            
+            int x;
+            double sum = 0;
+            int i = 0;
+            Console.WriteLine("Enter numbers for average (negative to exit):");
+
+            x = Convert.ToInt32(Console.ReadLine());
+
+            while (x >= 0)
+            {
+                sum = sum + x;
+                i++;
+
+                x = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("Average = " + sum / i);
+            */
+            int x = 1;
+            int a, b;
+            do
+            {
+                Console.WriteLine(x); // i know x
+                Console.WriteLine("Please give 2 numbers till the sum of them is 100");
+                a = Convert.ToInt32(Console.ReadLine());
+                b = Convert.ToInt32(Console.ReadLine());
+            }
+            while (a + b != 100);
+
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
 
         }
     }
