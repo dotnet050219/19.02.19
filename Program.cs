@@ -135,7 +135,7 @@ namespace _1902
             }
 
             Console.WriteLine("Average = " + sum / i);
-            */
+            
             int x = 1;
             int a, b;
             do
@@ -149,6 +149,22 @@ namespace _1902
 
             Console.WriteLine("a = " + a);
             Console.WriteLine("b = " + b);
+            */
+
+            int a, b, c;
+            do
+            {
+                Console.WriteLine("Please give 3 numbers till a * b == c");
+                a = Convert.ToInt32(Console.ReadLine());
+                b = Convert.ToInt32(Console.ReadLine());
+                c = Convert.ToInt32(Console.ReadLine());
+            }
+            while (a * b != c);
+
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
+            Console.WriteLine("c = " + c);
+
 
         }
     }
