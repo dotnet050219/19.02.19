@@ -59,7 +59,7 @@ namespace _1902
                 Console.WriteLine("the number is e zugi");
             }
 
-            */
+            
 
             Console.Write("Enter number fo digit check: ");
             int x = Convert.ToInt32(Console.ReadLine());
@@ -80,6 +80,44 @@ namespace _1902
                 Console.WriteLine("3 or more digits...");
             }
 
+            
+
+            int a, b, c;
+            Console.WriteLine("Enter 3 numbers and i will give you the biggeset (equal)");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            c = Convert.ToInt32(Console.ReadLine());
+
+            if (a > b && a > c)
+            {
+                Console.WriteLine(a + " is the biggest!");
+            }
+            else if (b > c)
+            {
+                Console.WriteLine(b + " is the biggest!");
+            }
+            else
+            {
+                Console.WriteLine(c + " is the biggest!");
+            }
+            
+
+            */
+
+            int x;
+            int sum = 0;
+            Console.WriteLine("Enter numbers for accumalation (negative to exit):");
+
+            x = Convert.ToInt32(Console.ReadLine());
+
+            while ( x >= 0 )
+            {
+                sum = sum + x;
+
+                x = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("Sum = " + sum);
 
         }
     }
